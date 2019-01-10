@@ -5,6 +5,8 @@ const movieRouter = express.Router();
 
 const PAGE_SIZE = 10;
 
+const jwt = require('jsonwebtoken');
+
 movieRouter.route('/')
   .get((req, res) => {
     let page = 1
