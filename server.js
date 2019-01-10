@@ -5,6 +5,7 @@ const cors = require('cors');
 
 const movieRouter = require('./App/Routes/movieRouter');
 const authRouter = require('./App/Routes/authRouter');
+const watchlistRouter = require('./App/Routes/watchlistRouter')
 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb+srv://tweb:TEy72XJXyYEo7g@cluster0-jsaqp.mongodb.net/movie_time?retryWrites=true', { useNewUrlParser: true });
@@ -16,6 +17,8 @@ app.use(express.json());
 app.use('/auth', authRouter);
 
 app.use('/movies', movieRouter);
+
+app.use('/watchlist', watchlistRouter);
 
 app.get('/', (req, res) => {
   res.json({

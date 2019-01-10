@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-var mongoosePaginate = require('mongoose-paginate-v2');
+const mongoosePaginate = require('mongoose-paginate-v2');
+
 const { Schema } = mongoose;
 
 const movieSchema = new Schema({
