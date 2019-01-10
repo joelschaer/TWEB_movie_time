@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend du TE 2 de tweb",
+  "main": "server.js",
+  "author": "Joel Schar",
+  "license": "ISC",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "NODE_ENV=test mocha test/**/*.js"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "eslint": "^5.12.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "mocha": "^5.2.0",
+    "mongoose": "^5.4.2",
+    "mongoose-paginate-v2": "^1.0.16",
+    "nodemon": "^1.18.9",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "supertest": "^3.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
